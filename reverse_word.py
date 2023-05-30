@@ -1,19 +1,7 @@
-def reverse_words(string):
-    # Split the string into individual words
-    words = string.split()
+'''Write a program (using functions!) that asks the user for a long string containing multiple words.
+Print back to the user the same string, except with the words in backwards order.'''
 
-    # Reverse the order of words
-    reversed_words = words[::-1]
-
-    # Join the reversed words into a new string
-    reversed_string = ' '.join(reversed_words)
-
-    return reversed_string
-
-# Ask the user for a long string
-user_string = input("Enter a long string containing multiple words: ")
-
-# Reverse the words and print the result
-reversed_string = reverse_words(user_string)
-print("Reversed string:")
-print(reversed_string)
+def reverseWord():
+  w = input('Enter sentence: ')
+  return ' '.join(w.split()[::-1])
+print(reverseWord())
